@@ -1,0 +1,23 @@
+{
+	"name": "Jupiter Bot",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "devcontainer",
+	"workspaceFolder": "/src",
+	"shutdownAction": "stopCompose",
+	"remoteUser": "node",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "firsttris.vscode-jest-runner",
+                "esbenp.prettier-vscode",
+                "eamodio.gitlens",
+                "ms-vsliveshare.vsliveshare",
+                "rtbenfield.vscode-jest-test-adapter",
+                "dbaeumer.vscode-eslint",
+                "Github.copilot"
+            ]
+        }
+    }
+}

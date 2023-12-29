@@ -1,0 +1,12 @@
+services:
+  devcontainer:
+    image: mcr.microsoft.com/devcontainers/typescript-node:20
+    build: .
+    container_name: jupiter-dev-container
+    hostname: jupiter-dev.local
+    working_dir: /src
+    volumes:
+       - ..:/src
+       # Allow AWS CLI and other tools to read an AWS profile
+       - ~/.aws:/home/node/.aws
+    command: sleep infinity
